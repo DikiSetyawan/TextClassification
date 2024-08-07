@@ -18,7 +18,7 @@ def main():
         data = [text, category, datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")]  # Use preprocess.input_data for data preparation
 
         # Save data to CSV
-        file_path = "/home/sat/diki/topicClassification/data/data.csv"
+        file_path = "./topicClassification/data/data.csv"
         if not os.path.exists(file_path) or os.path.getsize(file_path) == 0:
             with open(file_path, 'w', newline='') as file:
                 writer = csv.writer(file)
